@@ -1,0 +1,177 @@
+/*----------------------------------------------------------*/
+/*--- Assignment 2---*/  
+/*---  Written by: Carolina Torres Restrepo - 2195431 ---*/  
+/*--- For “Front-End Web Programming” Section 05807 - Winter 2022 ---*/ 
+/*----------------------------------------------------------*/
+
+* {
+ box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+ font-family: monospace, 'Courier New', Courier, sans-serif;
+ margin: 0;
+}
+
+/* Header title */
+.header {
+ padding: 120px;
+ text-align: center;
+ color: white;
+ background-image: url(custom-software-banner.jpeg);
+    background-size: 100% 100%;
+		font-size: 90%;
+		min-height: 400px;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+ font-size: 40px;
+}
+
+/* Sticky navbar */
+.navbar {
+ overflow: hidden;
+ background-color: #ff4382;
+ position: sticky;
+ top: 0;
+}
+
+/* Style the navigation bar link */
+.navbar a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 20px;
+ text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+ float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+ background-color: #ffeef8;
+ color: #000000;
+}
+
+/* Two columns container */
+.twocolumns {  
+ display: -ms-flexbox; 
+ display: flex;
+ -ms-flex-wrap: wrap; 
+ flex-wrap: wrap;
+}
+
+/* Creation of two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.leftside {
+ -ms-flex: 30%; 
+ flex: 30%;
+ background-color: #ffeef8;
+ padding: 20px;
+}
+
+/* Main column */
+.rightmain {   
+ -ms-flex: 70%;
+ flex: 70%;
+ background-color: white;
+ padding: 20px;
+}
+
+/* Salary Calculator Form */
+legend{
+text-align: center;
+ color: #ff4382;
+}
+#radio1{
+ margin-left: 36%;
+}
+#radio2{
+  margin-left: 36%;
+}
+
+#radio3{
+  margin-left: 36%;
+}
+#radio4{
+  margin-left: 36%;
+}
+#hours{
+  background-color: #ffeef8;
+}
+#salary{
+  background-color: #ffeef8;
+}
+#numberhrs{
+  text-align: center;
+}
+
+#button{
+  text-align: center;
+  font-family: monospace, 'Courier New', Courier, sans-serif; 
+  color: #fff;
+  background: #ff4382;
+}
+
+#btn{
+  text-align: center;
+}
+
+#annualsal{
+  text-align: center;
+}
+
+/* Hourly rate table */
+table, th, td {  
+  border: 2px solid #ff4382;
+  border-collapse: collapse; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  margin-bottom: 1%;
+  text-align:center;
+}
+
+/* To center the hourly rate table */
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+.tableleft {
+  width: 400px;
+  background-color:#ffeef8;
+}
+.tableright {
+  width: 180px;
+  background-color:#ffeef8;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ff4382;
+  color: white;
+  text-decoration: none;
+ }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+ }
+ 
+ /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+ @media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+ }

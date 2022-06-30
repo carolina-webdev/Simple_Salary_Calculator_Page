@@ -1,0 +1,87 @@
+<!---------------------------------------------------------->
+<!--- Assignment 2--->  
+<!---  Written by: Carolina Torres Restrepo - 2195431 --->  
+<!--- For “Front-End Web Programming” Section 05807 - Winter 2022 ---> 
+<!---------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Carolina's Software Company</title>
+<link rel="stylesheet" href="stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="navbar">
+    <a href="https://www.linkedin.com/" target="_blank" class="right">Follow Us on LinkedIn</a>
+   </div>
+<div class="header">
+ <h1>Carolina's Software Company </h1>
+ <h2><b>Salary Calculator</b></h2>
+</div>
+<div class="twocolumns">
+ <div class="leftside">
+   <h2 style="text-align: center;">How To Use Our Salary Calculator</h2>
+   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id purus vitae ipsum pharetra faucibus. Etiam eget finibus dolor, eget tempor orci. Sed non turpis vestibulum, sagittis neque vel, faucibus lorem. Aliquam ornare pretium justo vel pulvinar. Integer at leo est. Praesent dictum rutrum rhoncus. Nullam ex metus, molestie non gravida ut, ullamcorper a nisi. Duis orci erat, molestie a metus id, ornare vestibulum mi. In hac habitasse platea dictumst. Pellentesque accumsan laoreet lectus, eu sodales lacus malesuada nec. Aliquam ac placerat mi, ut malesuada risus. Praesent auctor tellus lacus, quis tristique sapien fringilla a. Etiam tincidunt quis eros sit amet pulvinar.</p>
+   <h3 style="text-align: center;">Contact us if you have any question:</h3>
+   <p>Email:</p>
+   <a href="mailto:carolina@torres.com">hello@ctrsoftwarecompany.com</a>
+ </div>
+ <div class="rightmain">
+   <form >
+     <h2 style="text-align: center; color: #ff4382;;">Welcome dear employee!</h2>
+     <br>
+     <table class="center">
+      <tr>
+        <th class="tableleft">Position</th>
+        <th class="tableright">Hourly Rate</th>
+    </tr>
+    <tr>
+        <td>Accountant</td>
+        <td>$30</td>
+    </tr>
+    <tr>
+        <td>Project Manager</td>
+        <td>$50</td>
+    </tr>
+    <tr>
+        <td>Software Engineer</td>
+        <td>$35</td>
+    </tr>
+    <tr>
+        <td>Receptionist</td>
+        <td>$20</td>
+    </tr>
+    </table>
+    <br>
+    <br>
+    <fieldset>
+      <legend>Calculate Your Annual Salary:</legend>
+      <br>
+    <div class="radios">
+      <input type="radio" id="radio1" name="Job" value="Accountant"> Accountant<br>
+      <input type="radio" id="radio2" name="Job" value="Software Engineer"> Software Engineer <br>
+      <input type="radio" id="radio3" name="Job" value="Project Manager"> Project Manager<br> 
+      <input type="radio" id="radio4" name="Job" value="Receptionist"> Receptionist <br>
+    </div>
+      <br>
+<div id="numberhrs">
+      Number of working hours in a year: <input id="hours" type="text" name="Hours" required><br><br>
+</div>
+<div id="btn">
+      <button id="button" type="button" name="button" onclick="calculate()">Compute Annual Salary</button><br><br>
+</div>
+<div id="annualsal">
+      Annual Salary: <input id="salary" type="text" name="Salary" >
+</div>
+      </fieldset>
+   </form>
+ </div>
+</div>
+<div class="footer">
+ Copyright &copy; 2022 Carolina's Software Company<br>
+  <a href="mailto:carolina@torres.com">hello@ctrsoftwarecompany.com</a>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
